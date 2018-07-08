@@ -13,7 +13,14 @@ session_start();
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	</head>
-	<style type="text/css">.alert {
+	<style type="text/css">#rcorners1 {
+    border-radius: 25px;
+   
+    padding: 20px; 
+    width: 200px;
+    height: 150px;    
+}
+	.alert {
     padding: 30px;
     padding-left: 50px; 
      background: rgba(76, 175, 80, 0.05);
@@ -59,7 +66,7 @@ session_start();
 			<section id="banner" class="bg-img" data-bg="banner1.jpg">
 				<div class="inner">
 					<header>
-						<h1 style="color: #e6e6e"><u>TESP</u></h1>
+						<h1 style="color: #e6e6e"  ><span id="rcorners1" class="w3-padding w3-white w3-opacity-min">&nbsp&nbspTESP&nbsp&nbsp</u></span></h1>
 						</strong><?php if (isset( $_SESSION["name"])){?>
   <div class="alert">
   <h3><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
@@ -150,6 +157,7 @@ session_start();
 						</footer>
 					</article>
 				</div>
+				<a href="#footer" class="more">Learn More</a>
 			</section>
 
 		<!-- Footer -->
